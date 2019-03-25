@@ -54,7 +54,7 @@ while True:
                     tcpCliSock.send(predata + '\n')
                     datafile.close()
                 else:
-					time.sleep(0.2)#防止while空循环，造成CPU占用率飙升到100%
+		    time.sleep(0.2)#防止while空循环，造成CPU占用率飙升到100%
                     datafile.close()
             except IOError:
                 print '----------------Losing connect!------------------'
